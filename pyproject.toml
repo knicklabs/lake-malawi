@@ -4,12 +4,3 @@ version = "0.1.0"
 description = "Lake Malwai environmental analysis"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-  "folium>=0.20.0",
-  "matplotlib>=3.10.7",
-  "planetary-computer>=1.0.0",
-  "pyproj>=3.7.2",
-  "pystac-client>=0.9.0",
-  "rasterio>=1.4.3",
-  "shapely>=2.1.2",
-]
