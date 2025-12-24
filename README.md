@@ -45,8 +45,32 @@ If you are not familiar with these tools, you can use the preconfigured containe
 
 Install dependencies with `mise run install`
 
+Download datasets:
+
+1. [Raw GeoJSON and satellite data files](https://gtvault-my.sharepoint.com/:u:/g/personal/nkenyeres3_gatech_edu/IQDNWwsJ3l5xSJhRUrjmPrXMARbRRrJC6zCKENAXrd6Jlmw?e=5pAs8v)
+2. [Processed GeoJSON and satellite data files](https://gtvault-my.sharepoint.com/:u:/g/personal/nkenyeres3_gatech_edu/IQDxrMppFMiwTYxF0yGmuyTSAZfWs3q7s7XBp2KZleINxh4?e=0gGNBw) (optional)
+
+These datasets were not included in the repository because they are not being licensed under the license of this project and they are quite large. That is why you will need to download them separately.
+
+Extract:
+
+1. Extract the contents from the downloaded `raw.zip` archive into `./data/raw/`.
+2. Optionally extract the contents from the downloaded `processed.zip` archive into `./data/processed/`. 
+
+Note: If you run the `landcover` notebook first, the `processed` files will be generated and so there is no need to download or extract them. However, if you want to run only the `evapotranspiration` notebook, then you will need to download and extract the processed files since you won't be generating them yourself.
+
+Run the landcover notebook:
+
 For landcover analysis, run `mise run landcover_notebook` and then visit `http://localhost:8888/notebooks/landcover.ipynb` in your browser to open the notebook. Select `Run > Run all cells` from the main menu to execute the notebook in its entirety. It may take several minutes to complete running.
+
+Run the evapotranspiration notebook:
 
 For evapotranspiration analysis, run `mise run evapo_notebook` and then visit `http://localhost:8888/notebooks/evapotranspiration.ipynb` in your browser to open the notebook. Select `Run > Run all cells` from the main menu to execute the notebook in its entirety. It may take several minutes to complete running.
 
+Special instructions when running notebooks from inside a dev container:
+
 Note: If running from the dev container, you may be prompted to enter a token. You can find it in the CLI output, as part of the URL. It should look like this: `http://localhost:8888/notebooks/landcover.ipynb?token=123`. Copy the part after `?token=` and paste it into the web page where prompted.
+
+## Questions
+
+Please feel free to contact the author with any questions you have.
