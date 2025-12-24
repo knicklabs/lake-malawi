@@ -13,7 +13,7 @@ python = "{{ get_env(name='PYTHON_VERSION', default='3.13') }}"
 [tasks.install]
 description = "Install dependencies"
 alias = "i"
-run = "uv pip install -r requirements.txt"
+run = "uv sync"
 
 [tasks.info]
 description = "Print project information"
@@ -21,3 +21,11 @@ run = '''
 echo "Project: $PROJECT_NAME"
 echo "Virtual Environment: $VIRTUAL_ENV"
 '''
+
+[tasks.landcover_notebook]
+description = "View landcover notebook"
+run = "jupyter notebook notebooks/landcover.ipynb"
+
+[tasks.evapo_notebook]
+description = "View evapotranspiration notebook"
+run = "jupyter notebook notebooks/evapotranspiration.ipynb"
