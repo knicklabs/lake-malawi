@@ -2,19 +2,6 @@
 
 This repository is an exploratory data analysis project. It uses satellite data to study land and water conditions around Lake Malawi from 2017 to 2024. Specifically, it focuses on data from a 25KM buffered zone around the lake boundary to understand environmental changes over time.
 
-This project is organized as a research-style codebase with data folders and executable notebooks. For convenience, output generated from running the notebooks has been committed to this repository.
-
-## Project Structure
-
-```
-lake-malawi/
-├─ data/          # Raw and intermediate data
-│  ├─ raw/        # Definition of lake boundary and raw satellite data
-│  ├─ processed/  # Definition of buffered region and masked satellite data
-├─ notebooks/     # Notebooks for landcover and evapotranspiration analysis
-├─ out/           # HTML exports of executed notebooks
-```
-
 ## Analysis
 
 ### Landcover
@@ -36,6 +23,19 @@ The evapotranspiration notebook downloads satellite data from the buffered area 
 - Simulate changes to weights to model effect on evapotranspiration over time into the future.
 
 ## Development
+
+### Project Structure
+
+This project is organized as a research-style codebase with data folders and executable notebooks. For convenience, output generated from running the notebooks has been committed to this repository.
+
+```
+lake-malawi/
+├─ data/          # Raw and intermediate data
+│  ├─ raw/        # Definition of lake boundary and raw satellite data
+│  ├─ processed/  # Definition of buffered region and masked satellite data
+├─ notebooks/     # Notebooks for landcover and evapotranspiration analysis
+├─ out/           # HTML exports of executed notebooks
+```
 
 ### Requirements
 
