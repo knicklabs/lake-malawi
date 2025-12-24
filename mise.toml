@@ -9,6 +9,7 @@ _.python.venv = { path = ".venv", create = true }
 
 [tools]
 python = "{{ get_env(name='PYTHON_VERSION', default='3.13') }}"
+uv = "latest"
 
 [tasks.install]
 description = "Install dependencies"
@@ -26,6 +27,14 @@ echo "Virtual Environment: $VIRTUAL_ENV"
 description = "View landcover notebook"
 run = "jupyter notebook notebooks/landcover.ipynb"
 
+[tasks.landcover_notebook_trust]
+description = "Trust landcover notebook"
+run = "jupyter trust notebooks/landcover.ipynb"
+
 [tasks.evapo_notebook]
 description = "View evapotranspiration notebook"
 run = "jupyter notebook notebooks/evapotranspiration.ipynb"
+
+[tasks.evapo_notebook_trust]
+description = "Trust evapotranspiration notebook"
+run = "jupyter trust notebooks/evapotranspiration.ipynb"

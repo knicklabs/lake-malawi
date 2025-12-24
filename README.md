@@ -39,7 +39,7 @@ lake-malawi/
 
 This project uses [Mise](https://github.com/jdx/mise), [UV](https://docs.astral.sh/uv/), and [Python 3.13](https://www.python.org/).
 
-If you are not familiar with these tools, you can use the preconfigured container to work with this project. In [VS Code](https://code.visualstudio.com/), open the project in a dev container when prompted. See this article on [developing inside a container](https://code.visualstudio.com/docs/devcontainers/containers) for more details.
+If you are not familiar with these tools, you can use the preconfigured container to work with this project. In [VS Code](https://code.visualstudio.com/), open the project in a dev container when prompted. See this article on [developing inside a container](https://code.visualstudio.com/docs/devcontainers/containers) for more details. This container has all the required software and dependencies.
 
 ### Getting Started
 
@@ -47,4 +47,6 @@ Install dependencies with `mise run install`
 
 For landcover analysis, run `mise run landcover_notebook` and then visit `http://localhost:8888/notebooks/landcover.ipynb` in your browser to open the notebook. Select `Run > Run all cells` from the main menu to execute the notebook in its entirety. It may take several minutes to complete running.
 
-For evapotranspiration analysis, run `mise run evapo_notebook` and then visit `http://localhost:8889/notebooks/evapotranspiration.ipynb` in your browser to open the notebook. Select `Run > Run all cells` from the main menu to execute the notebook in its entirety. It may take several minutes to complete running.
+For evapotranspiration analysis, run `mise run evapo_notebook` and then visit `http://localhost:8888/notebooks/evapotranspiration.ipynb` in your browser to open the notebook. Select `Run > Run all cells` from the main menu to execute the notebook in its entirety. It may take several minutes to complete running.
+
+Note: If running from the dev container, you may be prompted to enter a token. You can find it in the CLI output, as part of the URL. It should look like this: `http://localhost:8888/notebooks/landcover.ipynb?token=123`. Copy the part after `?token=` and paste it into the web page where prompted.
