@@ -4,6 +4,10 @@ This repository is an exploratory data analysis project. It uses satellite data 
 
 Landcover and evapotranspiration in particular are important factors in sustainable agriculture, water system conservation, and mitigating impacts of climate change.
 
+## Status
+
+This project has been archived as there is no active work being done on this project and there are no contributions being accepted back to this repository. It's here for learning or to fork if you want to carry on with similar work.
+
 ## Analysis
 
 ### Landcover
