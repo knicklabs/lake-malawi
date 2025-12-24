@@ -6,9 +6,7 @@ This repository is an exploratory data analysis project. It uses satellite data 
 
 ### Landcover
 
-The landcover notebook defines the lake's boundary and creates a 25km buffer around the boundary. The buffered area is stored in `./data/processed/lake_malawi_expanded_25km.json` in GeoJSON format. The notebook also processes the raw satellite data from `./data/raw`. For each year of data, the pixels whose coordinates fall inside the buffered area are extracted and subsequently stored in `./data/processed/malawi_{year}_masked.tif` (replace {year} with the any year from [2017...2024]).
-
-The extracted data is analyzed into landcover categories (e.g. different surface types) and examined for changes year-over-year between 2017 and 2024, inclusively.
+The landcover notebook defines the lake's boundary and creates a 25km buffer around the boundary. The notebook also processes the raw satellite data from the region. For each year of data, the pixels whose coordinates fall inside the buffered area are extracted. The extracted data is segmented into landcover categories (e.g. different surface types) and examined for changes year-over-year between 2017 and 2024, inclusively.
 
 ### Evapotranspiration
 
