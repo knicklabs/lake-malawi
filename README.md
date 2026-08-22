@@ -6,7 +6,7 @@ Landcover and evapotranspiration in particular are important factors in sustaina
 
 ## Status
 
-This project has been archived as there is no active work being done on this project and there are no contributions being accepted back to this repository. It's here for learning or to fork if you want to carry on with similar work.
+This project is not under active development but remains here for education purposes or to fork if you want to carry on with similar work.
 
 ## Analysis
 
